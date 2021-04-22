@@ -17,7 +17,7 @@
 Cutelog is available from the npm library:
 ```
 $ npm i cutelog.js
-```y
+```
 
 ## Usage
 The cutelog API is as simple as it gets:
