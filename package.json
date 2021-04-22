@@ -1,0 +1,19 @@
+{
+  "name": "cutelog",
+  "version": "1.0.0",
+  "description": "Lightweight and beautiful NodeJS logger",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twometer/cutelog.git"
+  },
+  "keywords": [],
+  "author": "Twometer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Twometer/cutelog/issues"
+  },
+  "homepage": "https://github.com/Twometer/cutelog#readme"
+}
