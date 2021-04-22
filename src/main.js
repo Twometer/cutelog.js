@@ -23,6 +23,9 @@ function log(level, message) {
 }
 
 function configure(levelName, formatter) {
+    if (!levelName || !formatter) {
+        throw Error('configure() requires the log level name and the formatter');
+    }
     if (levelName.length > MAX_NAME_LENGTH) {
         throw Error('Log names should not be longer than 5 characters');
     }
