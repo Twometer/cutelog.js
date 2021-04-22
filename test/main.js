@@ -13,3 +13,6 @@ log.error("Something bad happened");
 
 log.configure('test', chalk.keyword('orange'))
 log.custom('test', "Custom formatter!");
+
+log.configure('error', chalk.bgWhite.magentaBright)
+log.error('Reformatting of any log level')

@@ -19,10 +19,6 @@ function log(level, message) {
     console.log(` ${tag}${indent} ${message}`);
 }
 
-function factory(level) {
-    return message => log(level, message);
-}
-
 function configure(levelName, formatter) {
     if (levelName.length > 5) {
         throw Error('Log names should not be longer than 5 characters');
@@ -35,11 +31,15 @@ function custom(levelName, message) {
     log(config[levelName], message);
 }
 
+function factory(levelName) {
+    return message => custom(levelName, message);
+}
+
 module.exports = {
-    info: factory(config.info),
-    okay: factory(config.okay),
-    warn: factory(config.warn),
-    error: factory(config.error),
+    info: factory('info'),
+    okay: factory('okay'),
+    warn: factory('warn'),
+    error: factory('error'),
     configure,
     custom
 }
