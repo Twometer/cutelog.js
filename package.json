@@ -2,6 +2,7 @@
   "name": "cutelog",
   "version": "1.0.0",
   "description": "Lightweight and beautiful NodeJS logger",
+  "module": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Twometer/cutelog/issues"
   },
-  "homepage": "https://github.com/Twometer/cutelog#readme"
+  "homepage": "https://github.com/Twometer/cutelog#readme",
+  "dependencies": {
+    "chalk": "^4.1.1"
+  }
 }
