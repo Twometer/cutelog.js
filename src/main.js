@@ -9,14 +9,6 @@ let config = {
     error: {name: 'error', formatter: chalk.red}
 }
 
-function configure(level, name, formatter) {
-    if (name.length > 5) {
-        throw Error('Log names should not be longer than 5 characters');
-    }
-
-    config[level] = {name, formatter};
-}
-
 function log(level, message) {
     if (!level) {
         level = config.info;
@@ -27,12 +19,20 @@ function log(level, message) {
     console.log(` ${tag}${indent} ${message}`);
 }
 
-function custom(levelName, message) {
-    log(config[levelName], message);
-}
-
 function factory(level) {
     return message => log(level, message);
+}
+
+function configure(levelName, formatter) {
+    if (levelName.length > 5) {
+        throw Error('Log names should not be longer than 5 characters');
+    }
+
+    config[levelName] = {name: levelName, formatter};
+}
+
+function custom(levelName, message) {
+    log(config[levelName], message);
 }
 
 module.exports = {

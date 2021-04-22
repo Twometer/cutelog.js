@@ -9,7 +9,7 @@ log.okay("Yay, it worked!");
 
 log.warn("Maybe you should look into this");
 
-log.error("hrngh soup")
+log.error("Something bad happened");
 
-log.configure('test', 'test', chalk.keyword('orange'))
+log.configure('test', chalk.keyword('orange'))
 log.custom('test', "Custom formatter!");
