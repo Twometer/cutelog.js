@@ -20,7 +20,7 @@ $ npm install cutelog
 ```
 
 ## Usage
-Using cutelog is very easy:
+The cutelog API is as simple as it gets:
 ```javascript
 const log = require('cutelog')
 const chalk = require('chalk')
@@ -33,9 +33,16 @@ log.error("Something bad happened");
 
 // Any log level can be restyled:
 log.configure('error', chalk.keyword('orange'));
-log.error("Something bad happened, but in orange.");
+log.error("Something bad happened, but in orange");
 
 // And you can even define your own log levels:
 log.configure('cat', chalk.keyword('magenta'))
 log.custom('cat', "Nyan ~");
+
+// You can also define completely custom formatters:
+function formatter(input) {
+    return `[ ${chalk.yellow(input)} ]`;
+}
+log.configure('info', formatter);
+log.info("A custom formatted info message.");
 ```
