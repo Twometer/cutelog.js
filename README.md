@@ -16,7 +16,7 @@
 ## Installing
 Cutelog is available from the npm library:
 ```
-$ npm install cutelog
+$ npm i cutelog.js
 ```
 
 ## Usage
