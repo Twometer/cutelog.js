@@ -22,7 +22,7 @@ $ npm i cutelog.js
 ## Usage
 The cutelog API is as simple as it gets:
 ```javascript
-const log = require('cutelog')
+const log = require('cutelog.js')
 const chalk = require('chalk')
 
 // Out of the box, you get four log levels:
