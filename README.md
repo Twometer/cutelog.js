@@ -11,13 +11,13 @@
 - Lightweight
 - Easy to use
 - Fully customizable
-- Best colors anywhere with chalk
+- Beautiful colors everywhere with [chalk](https://github.com/chalk/chalk)
 
 ## Installing
 Cutelog is available from the npm library:
 ```
 $ npm i cutelog.js
-```
+```y
 
 ## Usage
 The cutelog API is as simple as it gets:
