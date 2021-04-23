@@ -2,9 +2,12 @@
   <h1 align="center">cutelog.js</h1>
   <p align="center">A simple, lightweight and beautiful console logger for Node.js</p>
 </p>
-
 <p align="center">
     <img src="img/screenshot.png">
+</p>
+<p align="center">
+    <img src="https://img.shields.io/npm/v/cutelog.js?style=flat-square">
+    <img src="https://img.shields.io/github/license/Twometer/cutelog.js?style=flat-square">
 </p>
 
 ## Features
