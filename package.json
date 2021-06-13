@@ -1,8 +1,9 @@
 {
   "name": "cutelog.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight and beautiful Node.js logger",
   "main": "src/main.js",
+  "types": "src/main.d.ts",
   "module": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
